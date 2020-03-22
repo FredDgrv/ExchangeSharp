@@ -1,4 +1,4 @@
-﻿/*
+/*
 MIT LICENSE
 
 Copyright 2017 Digital Ruby, LLC - http://www.digitalruby.com
@@ -67,6 +67,12 @@ namespace ExchangeSharp
     /// </summary>
     public sealed class ExchangeOrderBook
     {
+	    /// <summary>
+	    /// The first sequence id. This increments as updates come through. Not all exchanges will populate this.
+	    /// This property is not serialized using the ToBinary and FromBinary methods.
+	    /// </summary>
+	    public long? FirstSequenceId { get; set; }
+
         /// <summary>
         /// The sequence id. This increments as updates come through. Not all exchanges will populate this.
         /// This property is not serialized using the ToBinary and FromBinary methods.
