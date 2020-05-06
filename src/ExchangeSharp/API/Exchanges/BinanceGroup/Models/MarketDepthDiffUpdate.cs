@@ -1,4 +1,4 @@
-﻿/*
+/*
 MIT LICENSE
 
 Copyright 2017 Digital Ruby, LLC - http://www.digitalruby.com
@@ -16,7 +16,7 @@ namespace ExchangeSharp.BinanceGroup
 
     using Newtonsoft.Json;
 
-    internal class MarketDepthDiffUpdate
+    public class MarketDepthDiffUpdate
     {
         [JsonProperty("e")]
         public string EventType { get; set; }

@@ -1,4 +1,4 @@
-﻿/*
+/*
 MIT LICENSE
 
 Copyright 2017 Digital Ruby, LLC - http://www.digitalruby.com
@@ -14,7 +14,7 @@ namespace ExchangeSharp.BinanceGroup
 {
     using Newtonsoft.Json;
 
-    internal class MultiDepthStream
+    public class MultiDepthStream
     {
         [JsonProperty("stream")]
         public string Stream { get; set; }
